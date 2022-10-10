@@ -5,7 +5,19 @@ module.exports = {
         "./src/components/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            typography: {
+                DEFAULT: {
+                    css: {
+                        a: {
+                            '&:hover': {
+                                color: '#2c5282',
+                            },
+                        },
+                    },
+                },
+            }
+        },
     },
     plugins: [
         require('@tailwindcss/typography'),

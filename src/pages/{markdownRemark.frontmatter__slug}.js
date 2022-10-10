@@ -9,7 +9,7 @@ const BlogPostTemplate = ({ data }) => {
     const { html } = data.markdownRemark
     return (
         <Layout pageTitle={title}>
-            <div className='text-center pd-6 text-gray-500'>{date}</div>
+            <div className='text-center pd-6 text-gray-500 prose-sm'>{date}</div>
             <div
                 className='mx-auto'
                 dangerouslySetInnerHTML={{

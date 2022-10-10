@@ -9,10 +9,10 @@ const AboutPage = ({ data }) => {
                 {data.allMarkdownRemark.edges.map((nodeObj) => {
                     const node = nodeObj.node
                     const { title, slug, date } = node.frontmatter
-                    return <li className='hover:underline' key={node.id}>
-                        <Link to={`/${slug}`}>
-                            <b>{title}</b>
-                            <span>{date}</span>
+                    return <li key={node.id}>
+                        <Link className="no-underline flex justify-between items-center" to={`/${slug}`}>
+                            <span className='truncate flex-1'>{title}</span>
+                            <span className='width-5 text-gray-500 prose-sm'>{date}</span>
                         </Link>
                     </li>
                 })}

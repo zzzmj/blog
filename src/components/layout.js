@@ -5,8 +5,8 @@ import './layout.css'
 
 const Layout = ({ pageTitle, children }) => {
     return (
-        <div className='prose mx-auto px-4'>
-            <nav className='nav flex justify-between items-center my-6'>
+        <div className='layout prose mx-auto py-4 min-h-screen'>
+            <nav className='nav flex justify-between items-center'>
                 <h1 className='font-mono text-3xl'><Link className="no-underline" to="/">Blog</Link></h1>
                 <ul className='category flex list-none'>
                     <li><Link to="/life">生活</Link></li>
