@@ -1,9 +1,12 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-// import '../styles/markdown.css'
 require("prismjs/themes/prism.css")
 
+/**
+ * 集聚与汇聚， 交相辉映与相辅相成，克己奉公与刚正不阿，以致和以至，遏制与遏止
+ * 33232 13311 33244 42224 14223 32243 12144 12424
+ */
 const BlogPostTemplate = ({ data }) => {
     const { title, date } = data.markdownRemark.frontmatter
     const { html } = data.markdownRemark
